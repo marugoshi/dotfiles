@@ -1,0 +1,12 @@
+escape ^T^T
+hardstatus alwayslastline "%{= wk} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wb}%y/%m/%d %{=b wb}%c"
+termcapinfo xterm 'is=¥E[r¥E[m¥E[2J¥E[H¥E[?7h¥E[?1;4;6l'
+shell $SHELL
+vbell off
+startup_message off
+autodetach on
+defscrollback 10000
+
+bind U eval "encoding utf-8" "!!!echo 'export LANG=ja_JP.UTF-8'"
+bind E eval "encoding euc" "!!!echo 'export LANG=ja_JP.EUC-JP'"
+
