@@ -21,4 +21,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-s -r
+# execute screen if screen detached
+name=`whoami`
+i=`find /var/run/screen/S-$name -type p | wc -l`
+if [ "$i" -eq 1 ] ; then
+     s -r
+fi
+unset name
+unset i
