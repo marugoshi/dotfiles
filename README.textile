@@ -3,6 +3,7 @@ h1. Dotfiles
 h2. Install
 
 h3. Create Direcroty for Master File
+
 First, you would create directory for downloaded files.
 ex)
 @$ mkd@ir ~/rc@
@@ -10,6 +11,7 @@ or
 @# mkdir /rc@
 
 h3. Download
+
 Move to created directory, then download files.
 ex)
 @$ cd ~/rc@
@@ -19,9 +21,11 @@ or
 @# git clone git@github.com:marugoshi/dotfiles.git@
 
 h3. Execute Install Script
+
 Run install script.
 ex)
 @$ sh ./install.sh@
+or
 @# sh ./install.sh@
 
 Install script will make symbolic link into your home directory.
