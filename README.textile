@@ -6,7 +6,7 @@ h3. Create Direcroty for Master File
 
 First, you would create directory for downloaded files.
 ex)
-@$ mkd@ir ~/rc@
+@$ mkdir ~/rc@
 or
 @# mkdir /rc@
 
@@ -15,10 +15,10 @@ h3. Download
 Move to created directory, then download files.
 ex)
 @$ cd ~/rc@
-@$ git clone git@github.com:marugoshi/dotfiles.git@
+@$ git clone git\@github.com:marugoshi/dotfiles.git@
 or
 @# cd /rc@
-@# git clone git@github.com:marugoshi/dotfiles.git@
+@# git clone git\@github.com:marugoshi/dotfiles.git@
 
 h3. Execute Install Script
 
