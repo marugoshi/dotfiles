@@ -7,11 +7,10 @@
 #
 
 # start
-echo "Installing dotfiles..."
-echo "Caution! This script must be your dotfiles. You should backup files before run this script."
+printf "Installing dotfiles...\n"
 
 # set os
-echo "Type OS from below: [redhat/debian]"
+printf "Type OS from below: [redhat/debian]\n"
 read os
 case $os in
   'redhat' | 'debian')
@@ -22,12 +21,32 @@ case $os in
     ;;
 esac
 if [ "$selected" -eq 0 ] ; then
-  echo "You should type OS."
+  printf "You should type OS.\n"
   exit 1
 fi
 
 # create symbolic link
-echo "Create dotfiles symbolic files under your home directory..."
+printf "Create symbolic files under your home directory...\n"
+
+common_files="`pwd`/common/*"
+os_files="`pwd`/$os/*"
+for orig_path in $common_files $os_files ; do
+  target_file=".${orig_path##*/}"
+  target_path="$HOME/$target_file"
+  if [ -f $target_path ] ; then
+    printf "$target_file is already exists in your home directory. Override?: [yN]\n"
+    read flag
+    case $flag in
+      'y')
+        rm $target_path
+        ;;
+      *)
+        printf "skiped.\n"
+        ;;
+    esac
+  fi
+  ln -s $orig_path $target_path
+done
 
 # finish
-echo "Done."
+printf "Done.\n"
