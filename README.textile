@@ -16,11 +16,12 @@ Move to created directory, then download files.
 ex)
 
 <pre>$ cd ~/rc
-$ git clone git\\@github.com:marugoshi/dotfiles.git</pre>
+$ git clone git@github.com:marugoshi/dotfiles.git</pre>
 
 or
-@# cd /rc@
-@# git clone git\@github.com:marugoshi/dotfiles.git@
+
+<pre># cd /rc
+# git clone git@github.com:marugoshi/dotfiles.git</pre>
 
 h3. Execute Install Script
 
