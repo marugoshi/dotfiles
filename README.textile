@@ -14,8 +14,8 @@ h3. Download
 
 Move to created directory, then download files.
 ex)
-@$ cd ~/rc@
-@$ git clone git\@github.com:marugoshi/dotfiles.git@
+<pre>$ cd ~/rc
+$ git clone git\\@github.com:marugoshi/dotfiles.git</pre>
 or
 @# cd /rc@
 @# git clone git\@github.com:marugoshi/dotfiles.git@
