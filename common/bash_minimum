@@ -28,6 +28,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# pager
+export PAGER=less
+
 # alias
 alias l='ls -CF'
 alias la='ls -A'
