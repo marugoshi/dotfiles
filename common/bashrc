@@ -1,16 +1,17 @@
-if [ -f /etc/bash_completion ]; then
+if [[ -n "$PS1" ]] ; then
+  if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
-fi
-
-if [ -f "$HOME/.bash_minimum" ]; then
+  fi
+  
+  if [ -f "$HOME/.bash_minimum" ]; then
     . "$HOME/.bash_minimum"
-fi
-
-if [ -f "$HOME/.bash_os" ]; then
+  fi
+  
+  if [ -f "$HOME/.bash_os" ]; then
     . "$HOME/.bash_os"
-fi
-
-if [ -f "$HOME/.rvmrc" ]; then
+  fi
+  
+  if [ -f "$HOME/.rvmrc" ]; then
     . "$HOME/.rvmrc"
+  fi
 fi
-
