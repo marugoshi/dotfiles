@@ -40,7 +40,7 @@ alias c='cat'
 alias d='diff'
 alias f='free -m'
 alias l='less'
-alias g="sudo gem"
+alias g="gem"
 alias s='TERM=screen screen'
 
 # lang
