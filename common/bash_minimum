@@ -31,6 +31,9 @@ fi
 # pager
 export PAGER=less
 
+# editor
+export EDITOR=vi
+
 # alias
 alias l='ls -CF'
 alias la='ls -A'
