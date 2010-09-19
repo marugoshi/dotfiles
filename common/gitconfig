@@ -25,4 +25,4 @@
 [core]
   editor = vim
   pager = cat
-  excludesfile $HOME/.gitignore
+  excludesfile = $HOME/.gitignore
