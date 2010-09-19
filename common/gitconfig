@@ -1,0 +1,28 @@
+[User]
+  name = USER_NAME
+  email = USER_EMAIL
+
+[github]
+  user = GITHUB_USER
+  token = GITHUB_TOKEN
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+
+[alias]
+  ci = commit -a
+  co = checkout
+  info = config --list
+  st = status
+  up = pull --rebase
+
+[apply]
+  whitespace = nowarn
+
+[core]
+  editor = vim
+  pager = cat
+  excludesfile $HOME/.gitignore
