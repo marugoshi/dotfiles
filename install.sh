@@ -57,7 +57,7 @@ for orig_path in $common_files $os_files ; do
         ;;
     esac
   else
-    printf "Copy file or create symbolic link?: [cs]\n"
+    printf "Copy $target_file or create symbolic link?: [cs]\n"
     read type
     case $type in
       'c')
