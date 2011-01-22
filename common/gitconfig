@@ -26,3 +26,7 @@
   editor = vim
   pager = cat
   excludesfile = $HOME/.gitignore
+
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
