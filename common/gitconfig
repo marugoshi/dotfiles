@@ -13,6 +13,9 @@
   interactive = auto
 
 [alias]
+  b = branch
+  ba = branch -a
+  br = branch -r
   ci = commit -a
   co = checkout
   info = config --list
