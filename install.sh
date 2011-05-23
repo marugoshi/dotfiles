@@ -33,7 +33,7 @@ global_dirs="common $selected_os"
 # create directories
 printf "  Create directories in your home directory...\n"
 for global_dir in $global_dirs ; do
-  for top_dir in `ls -l ./$global_dir | awk '$1 ~ /d/ { print $9 }'` ; do
+  for top_dir in `ls -l ./$global_dir | awk '$1 ~ /d/ { print $NF }'` ; do
     if [ -d "./$global_dir/$top_dir" ] ; then
       for orig_path in `find ./$global_dir/$top_dir` ; do
         if [ -f $orig_path ] ; then
