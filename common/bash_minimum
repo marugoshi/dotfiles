@@ -43,8 +43,15 @@ alias c='cat'
 alias d='diff'
 alias f='free -m'
 alias l='less'
-alias g="gem"
 alias s='TERM=screen screen'
+
+# alias for development
+alias b='bundle'
+alias be='bundle exec'
+alias bi='bundle install'
+alias bu='bundle update'
+alias g='git'
+alias r='rails'
 
 # lang
 LANG=Ja_JP.UTF-8
