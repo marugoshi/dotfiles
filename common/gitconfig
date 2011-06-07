@@ -18,6 +18,7 @@
   br = branch -r
   ci = commit -a
   co = checkout
+  d = diff
   info = config --list
   st = status
   up = pull --rebase
