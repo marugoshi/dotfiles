@@ -43,7 +43,11 @@ alias c='cat'
 alias d='diff'
 alias f='free -m'
 alias l='less'
-alias s='TERM=screen screen'
+if [ -f .screenrc ]; then
+  alias s='TERM=screen screen -c .screenrc'
+else
+  alias s='TERM=screen screen'
+fi
 
 # alias for development
 alias b='bundle'
