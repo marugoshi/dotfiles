@@ -16,6 +16,9 @@ fi
 # set flex PATH
 PATH="/Developer/SDKs/flex_sdk_3/bin:$PATH"
 
+# set for flex compile option
+export _JAVA_OPTIONS='-Duser.language=en -Duser.region=US'
+
 # execute screen if screen detached
 user_name=`whoami`
 window_dir="/var/run/screen/S-$user_name"
