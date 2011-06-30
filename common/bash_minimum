@@ -43,6 +43,7 @@ alias c='cat'
 alias d='diff'
 alias f='free -m'
 alias l='less'
+alias q='exit'
 if [ -f .screenrc ]; then
   alias s='TERM=screen screen -c .screenrc'
 else
