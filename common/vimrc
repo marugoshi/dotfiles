@@ -16,8 +16,10 @@ set smartindent
 " compatibility
 set nocompatible
 
-" hilight
+" highlight
 syntax on 
+au BufNewFile,BufRead *.as set filetype=actionscript 
+au BufNewFile,BufRead *.mxml set filetype=mxml
 
 " input
 set backspace=indent,eol,start
@@ -37,7 +39,7 @@ set smartcase
 set incsearch
 set hlsearch
 
-" delete search hilight hit escape key twice 
+" delete search highlight hit escape key twice 
 nmap <ESC><ESC> ;nohlsearch<CR><ESC>
 
 " file
