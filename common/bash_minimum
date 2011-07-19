@@ -44,11 +44,8 @@ alias d='diff'
 alias f='free -m'
 alias l='less'
 alias q='exit'
-if [ -f .screenrc ]; then
-  alias s='TERM=screen screen -c .screenrc'
-else
-  alias s='TERM=screen screen'
-fi
+alias s='TERM=screen screen'
+alias sc='TERM=screen screen -c .screenrc'
 
 # alias for development
 alias b='bundle'
