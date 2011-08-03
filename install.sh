@@ -7,7 +7,7 @@
 #
 
 # initialize
-support_os="redhat debian"
+support_os="redhat debian osx"
 
 # start
 printf "Installing dotfiles...\n"
