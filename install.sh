@@ -39,7 +39,7 @@ for orig_file in $common_files $os_files ; do
     target_path="$HOME/$target_file" # ex) /Users/tokuyama/.vimrc
 
     if [ -f $target_path ] ; then
-      printf "    $target_file is already exists in your home directory. Override?: [yn]\n"
+      printf "    $target_file is already exists. Override?: [yn]\n"
       read flag
       case $flag in
         'y')
@@ -60,7 +60,7 @@ for orig_file in $common_files $os_files ; do
           ;;
       esac
     else
-      printf "    Copy $target_file or create symbolic link?: [cs]\n"
+      printf "    Copy $target_file or create symbolic link to $target_file?: [cs]\n"
       read type
       case $type in
         'c')
