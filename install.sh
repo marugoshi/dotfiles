@@ -74,5 +74,17 @@ for orig_file in $common_files $os_files ; do
   fi
 done
 
+# create symolic link for vundle
+orig_bundle_dir="`pwd`/common/vim/bundle"
+vim_dir="$HOME/.vim"
+target_bundle_dir="$vim_dir/bundle"
+if [ ! -d "$vim_dir" ] ; then
+  mkdir -p $vim_dir
+  printf "Create $vim_dir...done.\n"
+fi
+
+printf "Create Symbolic link to $target_bundle_dir...done.\n"
+ln -s $orig_bundle_dir $target_bundle_dir
+
 # finish
 printf "Done.\n"
