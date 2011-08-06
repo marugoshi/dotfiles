@@ -1,7 +1,7 @@
 " width
-set lines=50
+set lines=54
 " height
-set columns=150
+set columns=193
 
 " show gui tab always
 set showtabline=2
