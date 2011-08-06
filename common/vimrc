@@ -3,6 +3,10 @@ filetype on
 filetype indent on
 filetype plugin on
 
+" for vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 " tab
 set tabstop=2
 set shiftwidth=2  " indent width when cindent or autoindent called
