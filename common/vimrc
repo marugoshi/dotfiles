@@ -6,7 +6,7 @@ filetype plugin on
 " for vundle
 set rtp+=~/.vim/vundle/
 call vundle#rc()
-""Bundle 'unite.vim'
+Bundle 'unite.vim'
 
 " tab
 set tabstop=2
