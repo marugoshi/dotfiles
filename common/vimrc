@@ -8,6 +8,7 @@ set rtp+=~/.vim/vundle/
 call vundle#rc()
 Bundle 'unite.vim'
 Bundle 'Solarized'
+Bundle 'actionscript.vim'
 
 " tab
 set tabstop=2
