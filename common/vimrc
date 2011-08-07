@@ -26,7 +26,7 @@ set nocompatible
 " highlight
 syntax on 
 au BufNewFile,BufRead *.as set filetype=actionscript 
-au BufNewFile,BufRead *.mxml set filetype=mxml
+" au BufNewFile,BufRead *.mxml set filetype=mxml
 
 " input
 set backspace=indent,eol,start
