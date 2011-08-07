@@ -33,6 +33,10 @@ or
 
 Install script will make symbolic link into your home directory.
 
+After installed dotfiles, should vim command to install bundles.
+
+@:BundleInstall@
+
 h3. Branch
 
 You can use branch which specialized each development environments like below. 
