@@ -1,7 +1,8 @@
+" compatibility
+set nocompatible
+
 " file type
-filetype on
-filetype indent on
-filetype plugin on
+filetype off
 
 " for vundle
 set rtp+=~/.vim/vundle/
@@ -9,6 +10,12 @@ call vundle#rc()
 Bundle 'unite.vim'
 Bundle 'Solarized'
 Bundle 'Flex-Development-Support'
+
+" file type again
+filetype plugin indent on
+
+" hilight
+syntax enable 
 
 " tab
 set tabstop=2
@@ -20,11 +27,6 @@ set expandtab
 set autoindent
 set smartindent
 
-" compatibility
-set nocompatible
-
-" highlight
-syntax on 
 au BufNewFile,BufRead *.as set filetype=actionscript 
 " au BufNewFile,BufRead *.mxml set filetype=mxml
 
