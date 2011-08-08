@@ -1,13 +1,20 @@
+" compatibility
+set nocompatible
+
 " file type
-filetype on
-filetype indent on
-filetype plugin on
+filetype off
 
 " for vundle
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 Bundle 'unite.vim'
 Bundle 'Solarized'
+
+" file type again
+filetype plugin indent on
+
+" hilight
+syntax enable 
 
 " tab
 set tabstop=2
@@ -18,12 +25,6 @@ set expandtab
 " indent
 set autoindent
 set smartindent
-
-" compatibility
-set nocompatible
-
-" hilight
-syntax on 
 
 " input
 set backspace=indent,eol,start
