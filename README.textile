@@ -33,7 +33,12 @@ or
 
 Install script will make symbolic link into your home directory.
 
-After installed dotfiles, should vim command to install bundles.
+After installed dotfiles, set up submodule for vundle.
+
+<pre>$ git submodule init
+$ git submodule update</pre>
+
+Then should execute vim command to install bundles.
 
 @:BundleInstall@
 
