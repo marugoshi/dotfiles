@@ -9,3 +9,23 @@ set showtabline=2
 " color
 set background=light
 colorscheme solarized
+
+" font
+set guifont=Consolas:h12
+
+" no tool bar
+set guioptions-=T
+
+" no menu bar
+set guioptions-=m
+
+" no right scroll bar
+set guioptions-=r
+set guioptions-=R
+
+" no left scroll bar
+set guioptions-=l
+set guioptions-=
+
+" no bottom scroll bar
+set guioptions-=b
