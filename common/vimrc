@@ -18,7 +18,7 @@ syntax enable
 
 " tab
 set tabstop=2
-set shiftwidth=2  " indent width when cindent or autoindent called
+set shiftwidth=2 " indent width when cindent or autoindent called
 set softtabstop=0 " 0 is same with tabstop
 set expandtab
 
@@ -43,9 +43,7 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
-
-" delete search hilight hit escape key twice 
-nmap <ESC><ESC> ;nohlsearch<CR><ESC>
+nmap <Tab><Tab> :nohlsearch<CR><ESC> " delete search hilight hit tab key twice 
 
 " file
 set nobackup
