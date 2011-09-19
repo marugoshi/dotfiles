@@ -13,7 +13,7 @@ Bundle 'Solarized'
 " file type again
 filetype plugin indent on
 
-" hilight
+" highlight
 syntax enable 
 
 " tab
