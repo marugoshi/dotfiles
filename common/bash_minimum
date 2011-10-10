@@ -48,12 +48,18 @@ alias s='TERM=screen screen'
 alias sc='TERM=screen screen -c .screenrc'
 
 # alias for development
+alias g='git'
 alias b='bundle'
 alias be='bundle exec'
 alias bi='bundle install'
 alias bu='bundle update'
-alias g='git'
 alias r='rails'
+
+rlias rb='rbenv exec bundle'
+alias rbe='rbenv exec bundle exec'
+alias rbi='rbenv exec bundle install'
+alias rbu='rbenv exec bundle update'
+alias rr='rbenv exec bundle exec rails'
 
 # lang
 LANG=Ja_JP.UTF-8
