@@ -55,7 +55,7 @@ alias bi='bundle install'
 alias bu='bundle update'
 alias r='rails'
 
-rlias rb='rbenv exec bundle'
+alias rb='rbenv exec bundle'
 alias rbe='rbenv exec bundle exec'
 alias rbi='rbenv exec bundle install'
 alias rbu='rbenv exec bundle update'
