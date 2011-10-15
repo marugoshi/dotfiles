@@ -9,6 +9,7 @@ set rtp+=~/.vim/vundle/
 call vundle#rc()
 Bundle 'unite.vim'
 Bundle 'Solarized'
+Bundle 'Flex-Development-Support'
 Bundle 'fugitive.vim'
 
 " for fugitive
@@ -35,6 +36,9 @@ set expandtab
 " indent
 set autoindent
 set smartindent
+
+au BufNewFile,BufRead *.as set filetype=actionscript 
+au BufNewFile,BufRead *.mxml set filetype=mxml
 
 " input
 set backspace=indent,eol,start
