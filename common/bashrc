@@ -10,10 +10,6 @@ if [ -f "$HOME/.bash_os" ]; then
   . "$HOME/.bash_os"
 fi
 
-if [[ -n "$PS1" ]]; then
-  [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-fi
-
 if [ -f "/usr/local/bin/rbenv" ]; then
   eval "$(rbenv init -)"
   . /usr/local/Cellar/rbenv/0.2.1/completions/rbenv.bash
