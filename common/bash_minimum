@@ -55,12 +55,6 @@ alias bi='bundle install'
 alias bu='bundle update'
 alias r='rails'
 
-alias rb='rbenv exec bundle'
-alias rbe='rbenv exec bundle exec'
-alias rbi='rbenv exec bundle install'
-alias rbu='rbenv exec bundle update'
-alias rr='rbenv exec bundle exec rails'
-
 # lang
 LANG=Ja_JP.UTF-8
 export LANG
