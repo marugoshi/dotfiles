@@ -22,6 +22,7 @@
   info = config --list
   st = status
   up = pull --rebase
+  cat = cat-file -p
 
 [apply]
   whitespace = nowarn
