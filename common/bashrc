@@ -12,5 +12,5 @@ fi
 
 if [ -f "/usr/local/bin/rbenv" ]; then
   eval "$(rbenv init -)"
-  . /usr/local/Cellar/rbenv/0.2.1/completions/rbenv.bash
+  . /usr/local/Cellar/rbenv/0.3.0/completions/rbenv.bash
 fi
