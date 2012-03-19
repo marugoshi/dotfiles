@@ -13,9 +13,6 @@ if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi
 
-# set flex PATH
-PATH="/Developer/SDKs/flex_sdk_3/bin:$PATH"
-
 # set for flex compile option
 export _JAVA_OPTIONS='-Duser.language=en -Duser.region=US'
 
