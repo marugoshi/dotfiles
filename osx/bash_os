@@ -1,6 +1,7 @@
 # color prompt
-if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-  source /usr/local/git/contrib/completion/git-completion.bash
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+  source /usr/local/etc/bash_completion.d/git-completion.bash
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
   GIT_PS1_SHOWDIRTYSTATE=true
   PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1)\[\033[00m\]\$ '
 else
