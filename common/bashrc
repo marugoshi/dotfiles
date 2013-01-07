@@ -10,7 +10,5 @@ if [ -f "$HOME/.bash_os" ]; then
   . "$HOME/.bash_os"
 fi
 
-if [ -f "/usr/local/bin/rbenv" ]; then
-  eval "$(rbenv init -)"
-  . /usr/local/Cellar/rbenv/0.3.0/completions/rbenv.bash
-fi
+# for rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
