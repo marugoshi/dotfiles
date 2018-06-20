@@ -20,9 +20,6 @@ set expandtab
 set autoindent
 set smartindent
 
-au BufNewFile,BufRead *.as set filetype=actionscript 
-au BufNewFile,BufRead *.mxml set filetype=mxml
-
 " input
 set backspace=indent,eol,start
 set formatoptions=lmoq " add multibyte

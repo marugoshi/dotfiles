@@ -74,25 +74,5 @@ for orig_file in $common_files $os_files ; do
   fi
 done
 
-# create symolic link for vim
-vim_dir="$HOME/.vim"
-
-bundle_dir="$vim_dir/bundle"
-if [ ! -d "$bundle_dir" ] ; then
-  mkdir -p $bundle_dir
-  printf "Create $bundle_dir...done.\n"
-fi
-
-under_vim_dirs="vundle"
-for under_vim_dir in $under_vim_dirs ; do
-  orig_under_vim_dir="`pwd`/common/vim/$under_vim_dir"
-  target_under_vim_dir="$vim_dir/$under_vim_dir"
-  # TODO: skip if symbolic link exists
-  # TODO: rm if symbolic link exists
-  rm $target_under_vim_dir
-  ln -s $orig_under_vim_dir $target_under_vim_dir
-  printf "Create Symbolic link to $target_under_vim_dir...done.\n"
-done
-
 # finish
 printf "Done.\n"
