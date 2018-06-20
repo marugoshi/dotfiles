@@ -30,6 +30,7 @@ inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
+inoremap <silent> jj <ESC>
 
 " search
 set wrapscan
