@@ -10,5 +10,37 @@ if [ -f "$HOME/.bash_os" ]; then
   . "$HOME/.bash_os"
 fi
 
-# for rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+  PATH="$HOME/bin:$PATH"
+fi
+
+# for git
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
+fi
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+  source /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+if type git > /dev/null 2>&1; then
+  GIT_PS1_SHOWDIRTYSTATE=true
+  PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1)\[\033[00m\]\$ '
+else
+  PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+fi
+
+# alias for development
+alias g='git'
+alias b='bundle'
+alias be='bundle exec'
+alias bi='bundle install'
+alias bu='bundle update'
+alias r='rails'
+alias do='docker'
+alias ku='kubectl'
+
+# lang
+LANG=Ja_JP.UTF-8
+export LANG
+LC_ALL=ja_JP.UTF-8
+export LC_ALL

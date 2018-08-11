@@ -7,19 +7,8 @@ if [ -f /usr/local/etc/bash_completion.d/brew ]; then
   source /usr/local/etc/bash_completion.d/brew
 fi
 
-# for git
-if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
-  source /usr/local/etc/bash_completion.d/git-prompt.sh
-fi
-if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-  source /usr/local/etc/bash_completion.d/git-completion.bash
-fi
-if type git > /dev/null 2>&1; then
-  GIT_PS1_SHOWDIRTYSTATE=true
-  PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1)\[\033[00m\]\$ '
-else
-  PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-fi
+# for rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # for hugo
 if [ -f /usr/local/etc/bash_completion.d/hugo.sh ]; then
