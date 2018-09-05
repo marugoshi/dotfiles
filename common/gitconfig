@@ -1,6 +1,6 @@
 [User]
-  name = USER_NAME
-  email = USER_EMAIL
+  name = NAME
+  email = EMAIL
 
 [github]
   user = GITHUB_USER
@@ -36,3 +36,7 @@
 [branch "master"]
   remote = origin
   merge = refs/heads/master
+
+[credential]
+  helper = !aws codecommit credential-helper $@
+  UseHttpPath = true
