@@ -7,5 +7,16 @@ if [ -f /usr/local/etc/bash_completion.d/brew ]; then
   source /usr/local/etc/bash_completion.d/brew
 fi
 
+# for docker.app
+if [ -f /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion ]; then
+  source /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
+fi
+if [ -f /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion ]; then
+  source /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion
+fi
+if [ -f /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion ]; then
+  source /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion
+fi
+
 # for rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
