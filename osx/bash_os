@@ -9,8 +9,3 @@ fi
 
 # for rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# for hugo
-if [ -f /usr/local/etc/bash_completion.d/hugo.sh ]; then
-  source /usr/local/etc/bash_completion.d/hugo.sh
-fi
