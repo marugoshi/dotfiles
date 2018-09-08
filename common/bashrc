@@ -41,6 +41,8 @@ alias bi='bundle install'
 alias bu='bundle update'
 alias r='rails'
 alias do='docker'
+alias doi='docker image'
+alias doc='docker container'
 alias ku='kubectl'
 
 # lang
