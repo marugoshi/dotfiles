@@ -39,6 +39,7 @@ alias r='rails'
 alias dok='docker'
 alias doki='docker image'
 alias dokc='docker container'
+alias dokco='docker-compose'
 alias ku='kubectl'
 
 # lang
