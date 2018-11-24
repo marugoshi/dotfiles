@@ -41,6 +41,7 @@ alias doki='docker image'
 alias dokc='docker container'
 alias dokco='docker-compose'
 alias ku='kubectl'
+alias m='make'
 
 # lang
 LANG=Ja_JP.UTF-8
