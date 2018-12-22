@@ -42,6 +42,7 @@ alias dokc='docker container'
 alias dokco='docker-compose'
 alias ku='kubectl'
 alias m='make'
+alias tf='terraform'
 
 # lang
 LANG=Ja_JP.UTF-8
