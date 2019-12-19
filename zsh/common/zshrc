@@ -1,14 +1,8 @@
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-  eval "`dircolors -b`"
-  alias ls='ls --color=auto'
-  alias dir='dir --color=auto'
-  alias vdir='vdir --color=auto'
+autoload -U compinit
+compinit
 
-  alias grep='grep --color=auto'
-  alias fgrep='fgrep --color=auto'
-  alias egrep='egrep --color=auto'
-fi
+zstyle ':completion:*' menu select
+setopt list_packed
 
 # alias
 alias l='ls -CF'
@@ -46,14 +40,20 @@ if [ -f "$HOME/.zsh_local" ]; then
   . "$HOME/.zsh_local"
 fi
 
-if type git > /dev/null 2>&1; then
-  GIT_PS1_SHOWDIRTYSTATE=true
-  PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w$(__git_ps1)\[\033[00m\]\$ '
-else
-  PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-fi
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+
+PROMPT='%F{cyan}%n@%m%f: [%~] $vcs_info_msg_0_ %# '
 
 HISTFILE=~/.zhistory
 SAVEHIST=500
 HISTSIZE=$(($SAVEHIST * 2))
 setopt HIST_EXPIRE_DUPS_FIRST
+
