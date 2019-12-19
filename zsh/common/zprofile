@@ -1,0 +1,14 @@
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+  PATH="$HOME/bin:$PATH"
+fi
+
+# for rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# for goenv
+if which goenv > /dev/null; then
+  export PATH="$HOME/.goenv/bin:$PATH"
+  eval "$(goenv init -)"
+fi
+

@@ -1,0 +1,12 @@
+# lang
+LANG=Ja_JP.UTF-8
+export LANG
+LC_ALL=ja_JP.UTF-8
+export LC_ALL
+
+# pager
+export PAGER=less
+
+# editor
+export EDITOR=vi
+
