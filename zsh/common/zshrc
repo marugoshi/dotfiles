@@ -57,3 +57,7 @@ SAVEHIST=500
 HISTSIZE=$(($SAVEHIST * 2))
 setopt HIST_EXPIRE_DUPS_FIRST
 
+bindkey -e
+bindkey '\e[3~' delete-char
+bindkey '^R' history-incremental-search-backward
+
