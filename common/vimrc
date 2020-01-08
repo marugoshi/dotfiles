@@ -65,3 +65,5 @@ set mouse=a
 set ttymouse=xterm2
 map m :set mouse=a<CR>
 map mm :set mouse=<CR>
+
+set clipboard=unnamed,autoselect
