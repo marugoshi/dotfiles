@@ -31,6 +31,7 @@ alias dokco='docker-compose'
 alias ku='kubectl'
 alias m='make'
 alias tf='terraform'
+alias aws='docker run -e=AWS_PROFILE=makoto --rm -ti -v ~/.aws:/root/.aws amazon/aws-cli'
 
 if [ -f "$HOME/.zsh_os" ]; then
   . "$HOME/.zsh_os"
