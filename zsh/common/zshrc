@@ -16,6 +16,7 @@ alias l='less'
 alias q='exit'
 alias s='TERM=screen screen'
 alias sc='TERM=screen screen -c .screenrc'
+alias t='tmux'
 
 alias g='git'
 alias b='bundle'
