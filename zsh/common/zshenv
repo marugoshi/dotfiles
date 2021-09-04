@@ -10,3 +10,5 @@ export PAGER=less
 # editor
 export EDITOR=vi
 
+# tmux
+export TMUX_TMPDIR=/tmp
