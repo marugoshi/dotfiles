@@ -24,6 +24,7 @@
   st = status
   up = pull --rebase
   w = worktree
+  sw = switch
 
 [apply]
   whitespace = nowarn
