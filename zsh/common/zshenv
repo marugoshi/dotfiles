@@ -12,3 +12,30 @@ export EDITOR=vi
 
 # tmux
 export TMUX_TMPDIR=/tmp
+
+# direnv
+if [ -f /opt/homebrew/bin/direnv ]; then
+  eval "$(/opt/homebrew/bin/direnv hook zsh)"
+fi
+
+# go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+
+# nodenv
+export NODENV_ROOT="$HOME/.nodenv"
+if [ -d $NODENV_ROOT/bin ]; then
+  export PATH="$NODENV_ROOT/bin:$PATH"
+  eval "$(nodenv init -)"
+fi
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+if [ -d $PYENV_ROOT/bin ]; then
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
+
+# mainly poetry
+export LOCAL_ROOT="$HOME/.local"
+export PATH=$LOCAL_PATH/bin:$PATH
